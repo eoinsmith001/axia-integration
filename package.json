@@ -1,0 +1,23 @@
+{
+  "name": "axia-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js --ignore test/",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "request": "^2.67.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "superagent": "^1.6.1",
+    "supertest": "^1.1.0"
+  }
+}
