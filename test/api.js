@@ -17,10 +17,12 @@ describe('payment api',function() {
   };
 
   it('should be able to contact axia...',function(done) {
-    this.timeout(5000);
+    this.timeout(10000);
     request('https://sandbox.axiaepay.com')
       .post('/gate.php')
+      .set('Accept', 'application/json')
       .send(form)
+      .expect(200)
       .end(function(err,res) {
         expect(err).to.not.exist;
         console.log(res);

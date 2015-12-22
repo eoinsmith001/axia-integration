@@ -13,8 +13,8 @@ apiRouter.route('/')
 apiRouter.route('/paid')
   .get(function(req,res) {
     console.log('in paid endpoint get');
-    console.log(req.query);
-    res.status(204).json({
+    // console.log(req.query);
+    res.status(204).send({
       success: true,
       message: "paid get!"
     });
