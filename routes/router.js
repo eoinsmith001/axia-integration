@@ -10,6 +10,22 @@ apiRouter.route('/')
     });
   });
 
+apiRouter.route('/paid')
+  .post(function(req,res) {
+    console.log('in paid endpoint post');
+    res.status(204).json({
+      success: true,
+      message: "paid post!"
+    });
+  })
+  .get(function(req,res) {
+    console.log('in paid endpoint get');
+    res.status(204).json({
+      success: true,
+      message: "paid get!"
+    });
+  });
+
 apiRouter.route('/pay')
   .post(function(req,res) {
     res.status(201).json({
